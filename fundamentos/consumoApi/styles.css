@@ -1,0 +1,141 @@
+nav {
+    background-color: rgb(18, 10, 92);
+    height: 50px;
+    border: 3px 3px orange;
+}
+
+/*logo*/
+img {
+    height: 8em;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+body {
+    margin: 0;
+    margin-bottom: 72px;
+    padding-bottom: 72px;
+    background: url("./assets/fondo\ dragon\ ball.avif");
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(255, 219, 153, 0.8); 
+    z-index: -1; 
+    font-weight: 100;
+}
+
+
+h1 {
+    color:
+        rgb(250, 134, 2);
+    font-size: 50px;
+    padding: 10px;
+    -webkit-text-stroke: 2px rgb(26, 18, 1);
+    display: inline-block;
+    border-radius: 8px;
+
+}
+
+button {
+    background-color: rgb(1, 1, 80);
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+
+}
+
+
+.botonesInfo {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.titulo-personajes {
+    text-align: center !important;
+    color: rgb(8, 1, 36);
+    display: block;
+    width: 100%;
+    margin: 16px 0;
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+
+.personajes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+.personaje-card {
+    background: #e4e4e3;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+/* Efecto hover */
+.personaje-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Imagen del personaje */
+.personaje-card img {
+    width: 180px;
+    height: 220px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Nombre del personaje */
+.personaje-card h3 {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: #fa7602;
+
+}
+
+/* Informacion del personaje */
+.personaje-card p {
+    font-size: 0.95rem;
+    margin: 5px 0;
+    color: #333;
+}
+
+
+footer {
+    bottom: 0;
+    background-color: rgb(18, 10, 92);
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+
+}

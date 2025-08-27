@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="eS">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consumo Api</title>
+    <link rel="stylesheet" href="./styles.css">
     <script defer src="./script.js"></script>
     <!--async/defer  va directamente asociado - logica js 
     async se usa con scripts externos
@@ -13,13 +14,17 @@
 
 <body>
 
+    <nav>
+        
+    </nav>
     <header>
+        <img src="./assets/logo_dragonballapi.webp" alt="Logo">
         <h1>Consumo de Apis</h1>
     </header>
 
     <main>
-        <section>
-            <button id="btn-info" onclick="cargarInformacion()"> Mostrar mi Información</button>
+        <section class="botonesInfo">
+            <button id="btn-info" onclick="cargarInformacion()"> Mostrar Mi Información</button>
             <button onclick="cargarApi()"> Mostrar Api</button>
         </section>
 
